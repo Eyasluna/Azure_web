@@ -66,3 +66,85 @@ public class Main {
     }
 }
 ```
+7. Wrirte a program called Diamnond.java that uses for-loops to print this output: 
+```
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+```
+
+```java
+import java.util.Scanner;
+public class Edureka
+{
+public static void main(String args[])
+{
+int n, i, j, space = 1;
+System.out.print("Enter the number of rows: ");
+Scanner s = new Scanner(System.in);
+n = s.nextInt();
+space = n - 1;
+for (j = 1; j<= n; j++)
+{
+for (i = 1; i<= space; i++)
+{
+System.out.print(" ");
+}
+space--;
+for (i = 1; i <= 2 * j - 1; i++)
+{
+System.out.print("*");
+}
+System.out.println("");
+}
+space = 1;
+for (j = 1; j<= n - 1; j++)
+{
+for (i = 1; i<= space; i++)
+{
+System.out.print(" ");
+}
+space++;
+for (i = 1; i<= 2 * (n - j) - 1; i++)
+{
+System.out.print("*");
+}
+System.out.println("");
+}
+}
+}
+
+```
+
+8.  Wrirte a program called Pattern.java that uses for-loops to print this output: 
+```
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15 
+ ```
+ ```java
+ import java.util.Scanner;
+  
+public class Edureka
+{            
+        public static void main(String[] args) {
+            int i, j, k = 1;
+            for (i = 1; i <= 5; i++) {
+                for (j = 1; j< i + 1; j++) {
+                    System.out.print(k++ + " ");
+                }
+       
+                System.out.println();
+            }
+        }
+       
+    }
+ ```
